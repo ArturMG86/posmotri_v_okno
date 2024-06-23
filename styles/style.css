@@ -22,6 +22,7 @@ html {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  margin: 0;
   /* display: grid;
   grid-template-columns: 22px 534px;
   grid-template-rows: 125px 1140px;
@@ -55,8 +56,9 @@ ol {
   align-items: center;
   gap: 30px;
   padding: 0;
-  margin-block-end: 14px;
-  margin-inline-end: 17px;
+  inline-size: 1140px;
+  /* margin-block-end: 14px;
+  margin-inline-end: 17px; */
   /* grid-column: 2/3;
   grid-row: 2/3; */
 }
