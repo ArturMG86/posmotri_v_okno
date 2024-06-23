@@ -9,18 +9,25 @@ html {
 }
 
 .page {
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0 8px; */
+  display: grid;
+  place-content: center;
   inline-size: 1200px;
   block-size: 100%;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
-  display: grid;
+  /* display: grid;
   grid-template-columns: 22px 534px;
   grid-template-rows: 125px 1140px;
   justify-content: start;
   justify-items: start;
-  align-items: start;
+  align-items: start; */
 }
 
 h1,
@@ -44,12 +51,14 @@ ol {
 
 .content {
   display: flex;
-  justify-content: end;
-  align-items: end;
+  /* justify-content: end; */
+  align-items: center;
   gap: 30px;
   padding: 0;
-  grid-column: 2/3;
-  grid-row: 2/3;
+  margin-block-end: 14px;
+  margin-inline-end: 17px;
+  /* grid-column: 2/3;
+  grid-row: 2/3; */
 }
 
 .result {
@@ -57,7 +66,6 @@ ol {
   grid-template-rows: 74px 386px 16px 54px;
   padding: 0;
   position: relative;
-  margin-block-end: 17px;
 }
 
 .result__video-container {
@@ -198,23 +206,23 @@ ol {
   background-color: #1b1919;
 }
 
-.search-form__pseudo-checkbox:focus {
+/* .search-form__pseudo-checkbox:focus {
   border: none;
-}
+} */
 
 .search-form__pseudo-checkbox:has(:focus-visible) {
   outline: 1px solid #fff;
 }
 
-.search-form__label-text:hover {
+.search-form__label:hover .search-form__label-text:hover {
   text-decoration: underline;
   cursor: pointer;
 }
 
-.search-form__pseudo-checkbox:hover + span {
+/* .search-form__pseudo-checkbox:hover + span {
   text-decoration: underline;
   cursor: pointer;
-}
+} */
 
 .button {
   cursor: pointer;
@@ -231,7 +239,7 @@ ol {
 }
 
 .button:focus-visible {
-  outline: 2px double #fff;
+  outline: 1px double #fff;
 }
 
 .button:hover {
@@ -245,7 +253,6 @@ ol {
 .search-form__submit-button {
   width: 194px;
   height: 34px;
-  display: block;
   align-self: end;
 }
 
@@ -270,7 +277,7 @@ ol {
 .content__list {
   position: relative;
   height: 298px;
-  overflow: scroll;
+  overflow: auto;
 }
 
 .content__list-item:not(:last-of-type) {
